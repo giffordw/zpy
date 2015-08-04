@@ -260,7 +260,7 @@ class z_est:
         #plot lines
         vlin_pspecs = []
         if self.plotlines == None:
-            self.plotlines = {'HKlines':[3968.5,3933.7],'emission_lines':[3725.0,4959.0,5007.0],'absorption_lines':[4102.9,4304.0,4862.0,5175.0]}
+            self.plotlines = {'HKlines':[3968.5,3933.7],'emission_lines':[3725.0,4959.0,5007.0],'absorption_lines':[4102.9,4304.0,4862.0,5175.0],'sky_lines':[]}
         else: pass
         try:
             for vlin in self.plotlines['HKlines']:
@@ -273,6 +273,10 @@ class z_est:
         try:
             for vlin in self.plotlines['absorption_lines']:
                 vlin_pspecs.append(ax2.axvline(vlin*(1+redshift_est),ls='--',alpha=0.7,c='orange'))
+        except KeyError: pass
+        try:
+            for vlin in self.plotlines['sky_lines']:
+                vlin_pspecs.append(ax2.axvline(vlin*(1+redshift_est),ls='--',alpha=0.7,c='grey'))
         except KeyError: pass
 
             

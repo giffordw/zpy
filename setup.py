@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name='zpy',
-      version='0.1',
+      version='0.2',
       description='Redshift estimator for astronomical systems',
       url='http://github.com/giffordw/zpy',
       author='Dan Gifford',
