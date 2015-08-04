@@ -1,9 +1,9 @@
 # zpy
 Interactive redshift estimation for astronomical objects
 
-###Author###
+###Authors###
 
 * **Dan Gifford**, University of Michigan
-
+* **Anthony Kremin**, University of Michigan
 
 
