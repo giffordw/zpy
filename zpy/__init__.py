@@ -182,6 +182,7 @@ class z_est:
             redshift_est = self.spectra2.finalz
         except AttributeError:
             pass
+        print 'zpy redshift estimate',redshift_est
         return redshift_est,cor,ztest,corr_val,self.qualityval
 
     def _cross_cor(self,z_est,unc,early_type_wave,early_type_flux,wave,Flux_sc):
